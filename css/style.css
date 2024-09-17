@@ -6,6 +6,63 @@
 body{
     font-family: sans-serif;
 }
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section{
+    height: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*..................................................... header */
+
+header{
+    max-width: auto 0;
+    height: 200px;
+    align-items: center;
+    background-color: #2A3F54;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+  
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+}
+
+.ul-li{
+    flex-direction: column;
+    
+}
+
+.item{
+    color:#fff;
+    font-size: 40px;
+}
+
+/* .........................................................nav-scrol */
 .sidebar{
  position: fixed;
  left: 0;
@@ -25,7 +82,7 @@ body{
 }
 
 .sidebar ul li a.active{
-    background-color: #4CAF50;
+    background-color: #ACAF50;
     color: white;
 }
 
@@ -33,73 +90,18 @@ body{
     background-color: #555;
 }
 
-.content{
-    margin-left: 220px;
-    padding: 20px;
-}
+/*.................................................................. text-img  */
 
-section{
-    height: 500px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-header{
-    max-width: auto 0;
-    height: 200px;
-    align-items: center;
-    background-color:black;
-    
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-  
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-
-.container{
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 .text-img{
     background-image: url("../img/");
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    background-color:#4CAF50;
+    background-color:#A3CED9;;
     height: 400px;
 }
 
-.header-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 170px;
-}
-
-.ul-li{
-    flex-direction: column;
-    
-}
-
-.item{
-    color:#fff;
-    font-size: 40px;
-}
 .text-header{
   align-items: end;
 
