@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     font-family: sans-serif;
@@ -18,6 +17,13 @@ section{
     padding: 20px;
     margin-bottom: 20px;
 }
+
+ul a, li a {
+    all: unset;
+    color: inherit; /* Используем цвет родительского элемента */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer; /* Добавляем указатель, чтобы сохранить функциональность ссылки */
+  }
 
 /*..................................................... header */
 
@@ -42,7 +48,6 @@ nav li {
   nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
   }
 
   .header-box{
@@ -64,32 +69,49 @@ nav li {
 
 /* .........................................................nav-scrol */
 .sidebar{
- position: fixed;
- left: 0;
- top: 0;
- width: 200px;
- height: 400px;
- padding-top: 350px;
+ background-color: #A3CED9;
 }
 
 .sidebar ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
 }
 
 .sidebar ul li{
-    margin: 20px 0;
+    margin: 20px 20px;
+    text-align: center;
+
 }
 
-.sidebar ul li a.active{
-    background-color: #ACAF50;
-    color: white;
+.nav-link{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    color:#2A3F54;
+}
+.text-nav-link{
+    font-size: 40px;
+    font-weight: 700;
+    color: #2A3F54;
+    padding-bottom: 20px;
 }
 
-.sidebar ul li a:hover{
-    background-color: #555;
+.slide{
+    display: column;
 }
 
+.ul-slide{
+    display: flex;
+}
+
+.slide-img img{
+    max-width: 800px;
+}
+
+.text-slide{
+    width: 600px;
+}
 /*.................................................................. text-img  */
 
 
@@ -98,22 +120,17 @@ nav li {
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    background-color:#A3CED9;;
-    height: 400px;
+    background-color:#DAE5F2;;
+    height: 350px;
 }
 
 .text-header{
   align-items: end;
-
+  padding-top: 60px;
 
 }
 .text-header h2{
-  color:#fff;
+  color:#2A3F54;
   font-size: 60px;
-}
-
-.text-header p{
-    color:#fff;
-    font-size: 60px;
 
 }
